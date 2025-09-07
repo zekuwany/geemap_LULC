@@ -13,7 +13,7 @@ except ImportError:
     from git import Repo
 
 
-git_url = "https://github.com/giswqs/qgis-earthengine-examples"
+git_url = "https://github.com/zekuwany/qgis-earthengine-examples"
 out_repo_name = "earthengine-py-notebooks"
 
 # Create a temporary working directory
