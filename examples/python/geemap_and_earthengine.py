@@ -8,7 +8,7 @@ except Exception as e:
     ee.Initialize()
 
 # Create an interactive map
-Map = geemap.Map(center=(40, -100), zoom=4)
+Map = geemap.Map(center=(41.7556, 9.2432), zoom=4)
 Map
 
 # Add Earth Engine dataset
@@ -22,7 +22,7 @@ vis_params = {
 }
 
 # Print the elevation of Mount Everest.
-xy = ee.Geometry.Point([86.9250, 27.9881])
+xy = ee.Geometry.Point([41.73, 9.25])
 elev = image.sample(xy, 30).first().get("elevation").getInfo()
 print("Mount Everest elevation (m):", elev)
 
@@ -32,4 +32,4 @@ Map.addLayer(xy, {"color": "red"}, "Mount Everest")
 
 # Set center of the map
 Map.centerObject(ee_object=xy, zoom=13)
-Map.setCenter(lon=-100, lat=40, zoom=4)
+Map.setCenter(lon=41.7556, lat=9.2432, zoom=4)
