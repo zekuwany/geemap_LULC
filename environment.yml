@@ -1,6 +1,7 @@
-name: geo-env
+name: gee
 channels:
     - conda-forge
+    - defaults
 dependencies:
     - cartopy
     - datapane
