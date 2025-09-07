@@ -1,7 +1,7 @@
 /*
 
 A sample Earth Engine JavaScript library.
-The script is adapted from https://code.earthengine.google.com/2bca4e5f36d5a2d642475a98fa421fa9
+The script is adapted from https://code.earthengine.google.com/615069be6b8b20a5b221fca6112510a2
 Credits to Gennadii Donchyts.
 
 */
