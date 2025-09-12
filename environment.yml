@@ -1,4 +1,4 @@
-name: gee
+name: ee
 channels:
     - conda-forge
     - defaults
