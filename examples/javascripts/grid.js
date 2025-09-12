@@ -31,7 +31,7 @@ var generateRasterGrid= function(origin, dx, dy, proj) {
  * Generates a regular grid using given bounds, specified as geometry.
  */
 var generateGrid = function(xmin, ymin, xmax, ymax, dx, dy, marginx, marginy, opt_proj) {
-    var proj = opt_proj || 'EPSG:4326';
+    var proj = opt_proj || 'EPSG:32637';
 
     dx = ee.Number(dx);
     dy = ee.Number(dy);
@@ -67,7 +67,7 @@ var generateGrid = function(xmin, ymin, xmax, ymax, dx, dy, marginx, marginy, op
 
 var grid_test = function() {
 
-    var gridRaster = generateRasterGrid(ee.Geometry.Point(0, 0), 10, 10, ee.Projection('EPSG:4326'));
+    var gridRaster = generateRasterGrid(ee.Geometry.Point(0, 0), 10, 10, ee.Projection('EPSG:32637'));
     Map.addLayer(gridRaster.select('id').randomVisualizer(), {}, 'Grid raster', true, 0.5);
 
     var gridVector = generateGrid(-180, -70, 180, 70, 10, 10, 0, 0);
