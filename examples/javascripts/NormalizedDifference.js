@@ -17,7 +17,7 @@ var palette = ['FFFFFF', 'CE7E45', 'DF923D', 'F1B555', 'FCD163', '99B718',
                '004C00', '023B01', '012E01', '011D01', '011301'];
 
 // Center the map
-Map.setCenter(-94.84497, 39.01918, 8);
+Map.setCenter(41.80, 8.59, 8);
 
 // Display the input image and the NDVI derived from it.
 Map.addLayer(img.select(['sur_refl_b01', 'sur_refl_b04', 'sur_refl_b03']),
